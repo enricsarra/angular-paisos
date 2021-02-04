@@ -1,0 +1,11 @@
+<div class="d-flex">
+
+    <form (ngSubmit)="buscar()" autocomplete="off" class="ml-1 mr-1">
+        <input type="text" name="termino" class="form-control" [(ngModel)]="termino" (input)="teclaPresionada()" [placeholder]="placeholder" />
+    </form>
+
+
+
+
+    <button (click)="buscar()" class="btn btn-secondary btn-outline-dark" type="submit">Cercar</button>
+</div>
